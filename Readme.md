@@ -16,7 +16,7 @@ ch /Users/arslankhan/Codes/stable-diffusion-webui
 ./webui.sh --skip-torch-cuda-test --precision full --no-half --listen 
 ```
 
-#### build container locally
+#### Build container locally
 ``` sh
 # Start machine
 docker machine start
@@ -39,17 +39,15 @@ docker run -d --name stable-diffusion-webui-final -p 7870:7860 stable-diffusion-
 
 ## Rough Notes (ignore)
 #### testing
-curl http://127.0.0.1:7860
-curl http://localhost:7860
-curl http://0.0.0.0:7860
-curl http://192.168.1.106:7860
-
-curl http://127.0.0.1:80
-curl http://localhost:80
-curl http://0.0.0.0:80
-curl http://192.168.1.106:80
-
-curl http://127.0.0.1:7861
-curl http://localhost:7861
-curl http://0.0.0.0:7861
-curl http://192.168.1.106:7861
+```sh
+curl http://127.0.0.1:7870
+curl http://localhost:7870
+curl http://0.0.0.0:7870
+curl http://192.168.1.106:7870
+```
+####
+```sh
+git add .
+git commit -an "updated readme"
+git push
+```
